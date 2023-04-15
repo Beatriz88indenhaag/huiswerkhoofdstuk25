@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAkYuEAHGJpgBzamIAPV6HAEVCPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABERAAEAAAABAAAREAAAAAEVVUgAAAAAAUzU1AiAAAABTM1VVAAAAAAUTMzUAAAAAAFETM1BVAAAABVUTVTIAAAAAAFUQUAAAAAAABVUAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA/78AAMO/AAC8fwAAgf8AAIE/AACAfwAAwH8AAOAnAADwBwAA/g8AAP8fAAD/vwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">   
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap-CSS -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="contact.css">
+<title>contactformulier</title>
+</head>
+<body>
+    <header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="huisvesting.html">huisvesting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="verzorging.html">verzorging</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="voeding.html">voeding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ziektes.html">ziektes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">contact</a>
+          </li>
+      </ul>
+  </nav>
+</header>
+<h1>contact</h1> 
+<div class="container-sm">
+  <form id="contactform"
+  action="https://formspree.io/f/xnqynqjp"
+  method="post">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br>
+      <label for="lemail">email:</label><br>
+      <input type="text" id="email" name="lname" value="email"><br>
+
+      <input type="hidden" name="_subject" value="Website contact"/>
+      <textarea name="Uw boodschap" placeholder="UW bericht"></textarea><br>
+      <input type="submit" value="Submit">
+      <br>
+    </form> 
+
+    <div class="container">
+      <h1 class="form-title">Registratie</h1>
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="volledigenaam">volledige naam</label>
+            <input type="text"
+                    id="volledigenaam"
+                    name="volledigenaam"
+                    placeholder="volledige naam"/>
+          </div>
+          <div class="user-input-box">
+            <label for="ugebruikersnaam">gebruikersnaam</label>
+            <input type="text"
+                    id="gebruikersnaam"
+                    name="gebruikersnaam"
+                    placeholder="gebruikersnaam"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="telefoonnummer">telefoonnummer</label>
+            <input type="text"
+                    id="telefoonnummer"
+                    name="telefoonnummer"
+                    placeholder="telefoonnummer"/>
+          </div>
+          <div class="user-input-box">
+            <label for="wachtwoord">wachtwoord</label>
+            <input type="wachtwoord"
+                    id="wachtwoord"
+                    name="wachtwoord"
+                    placeholder="wachtwoord"/>
+          </div>
+          <div class="user-input-box">
+            <label for="bevestigwachtwoord">bevestig wachtwoord</label>
+            <input type="wachtwoord"
+                    id="bevestigwachtwoord"
+                    name="bevestigwachtwoord"
+                    placeholder="bevestig wachtwoord"/>
+          </div>
+        </div>
+        <div class="geslacht-details-box">
+          <span class="geslacht-title">geslacht</span>
+          <div class="geslacht-category">
+            <input type="radio" name="geslacht" id="man">
+            <label for="man">Man</label>
+            <input type="radio" name="geslacht" id="vrouw">
+            <label for="vrouw">vrouw</label>
+            <input type="radio" name="geslacht" id="overig">
+            <label for="overig">overig</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Registreer">
+        </div>
+      </form>
+    </div>
+    <iframe frameborder="0" scrolling="no" class="weerplazaWidget" src="https://www.weerplaza.nl/weerwidgets/verwachting/8584/" style="padding: 10px; width: 100% !important; max-width: 370px !important; height: 350px !important; border: 1px solid rgb(244, 244, 244) !important; box-sizing: border-box !important;"></iframe>   
+</div><footer>
+  <p>Created by Beatriz de van der Schueren. © 2022</p>
+  </div></footer>
+  </body>
+  </html>
